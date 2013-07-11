@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
   	
 	buffer=fs.readFileSync('index.html');
 	str_tst=buffer.toString();
-	response.send('Hello World 2!!!!!!!!!!');
+	response.send(str_tst);
 });
 
 var port = process.env.PORT || 5000;
